@@ -10,6 +10,8 @@ by Zheng Zhan, Wenping Wang, and Falai Chen*
 
 Computer Methods in Applied Mechanics and Engineering, 2025
 
+## Note
+
 In the paper, we utilized the algorithm from <a href="https://github.com/kuiwuchn/3x3_SVD_CUDA">"Fast CUDA 3x3 SVD"</a> to accelerate singular value decomposition (SVD). 
 However, this algorithm requires additional compilation for different CUDA versions and python versions.
 Therefore, in this code, we use "torch.linalg.svdvals" instead, which is slightly slower but easy to use. 
